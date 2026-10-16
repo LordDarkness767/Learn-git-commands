@@ -1,0 +1,65 @@
+/* MOBILE FIRST NO DESKTOP  */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+#hide {
+  display: none;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  min-height: 100vh;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.helement1 img {
+  width: 70%;
+}
+.helement1 {
+  grid-column: 1;
+  text-align: center;
+}
+.helement2 {
+  grid-column: 2;
+  text-align: center;
+}
+.helement2 {
+}
+
+/* ==========================================================================
+   3. MEDIA QUERY: DES DE 380 (Movils horitzontals)
+   ========================================================================== */
+@media screen and (min-width: 380px) {
+}
+
+/* ==========================================================================
+   3. MEDIA QUERY: DES DE 750px (Tabletes horitzontals / Desktops petits)
+   ========================================================================== */
+@media screen and (min-width: 750px) {
+  #hide {
+    display: block;
+  }
+  #btn_menu {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   4. MEDIA QUERY: DES DE 1100px (Pantalles grans / Desktops)
+   ========================================================================== */
+@media screen and (min-width: 1100px) {
+  #hide {
+    display: flex;
+  }
+  #btn_menu {
+    display: none;
+  }
+}
